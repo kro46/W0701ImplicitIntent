@@ -24,8 +24,9 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(Intent.ACTION_VIEW, uri)
             startActivity(intent)
         }
-        binding.btnTeleghone.setOnClickListener {
-            val uri = Uri.parse("sms:010-3115-1042")
+        binding.btnTelephone.setOnClickListener {
+            //val uri = Uri.parse("tel:010-1234-1234")
+            val uri = Uri.parse("sms:010-1234-1234")
             val intent = Intent(Intent.ACTION_VIEW, uri)
             startActivity(intent)
         }
